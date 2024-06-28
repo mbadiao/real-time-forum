@@ -1,0 +1,165 @@
+.message {
+  height: 65vh;
+  width: 24vw;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.messageheader {
+  border-radius: 20px 20px 0 0;
+  height: 8vh;
+  width: 24vw;
+  background-color: #116eff;
+}
+
+
+.messagefooter {
+  border-radius: 0 0 20px 20px;
+  height: 10%;
+  width: 100%;
+  background-color: #116eff;
+}
+
+.oneusersmessage {
+  width: max-content;
+  color: white;
+  align-items: center;
+  padding: 4% 5%;
+}
+
+.userbadgesmessage {
+  background-color: white;
+  color: #116eff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5vw;
+}
+
+.userfisrtandlastnamemessage {
+  width: max-content;
+}
+
+.istyping {
+  color: #ffffff;
+  margin: 0 30%;
+  width: max-content;
+}
+
+.userandtyping {
+  display: flex;
+  margin-top: -2%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.chat-container {
+  height: 80%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-bubble {
+  width: max-content;
+  max-width: 15vw;
+  padding: 3%;
+  border-radius: 15px;
+  height: max-content;
+  margin: 3% 3%;
+}
+
+.sender {
+  background-color: #116EFF;
+  align-self: flex-end;
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+.receiver {
+  background-color: #3f3f3f;
+  color: white;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
+
+.received {
+  align-self: flex-start;
+  color: grey;
+  border-bottom-left-radius: 0;
+  font-size: 0.7em;
+}
+
+.sent {
+  align-self: flex-end;
+  color: grey;
+  border-bottom-right-radius: 0;
+  font-size: 0.7em;
+
+}
+
+.messageChat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1vw;
+}
+
+
+.messageInput {
+  border: #116eff 1px solid;
+  border-radius: 50px;
+  height: 4.7vh;
+  width: 15vw;
+  padding: 0 4%;
+  margin: 3% 0;
+  color: #3f3f3f;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+.messageInput:focus {
+  outline: none;
+}
+
+.messageInput::placeholder {
+  color: #5e5e5e;
+}
+
+
+
+.sendChat {
+  background-color: #116eff;
+  color: white;
+  border-radius: 50px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sendChat svg {
+  display: block;
+  width: 4vw;
+}
+
+.typing-chat {
+  width: max-content;
+  max-width: 15vw;
+  padding: 3%;
+  border-radius: 15px;
+  height: max-content;
+  margin: 3% 3%;
+  background-color: #3f3f3f;
+  color: white;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}

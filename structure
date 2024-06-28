@@ -1,0 +1,67 @@
+Proposition 1:
+/forum-project
+│
+├── /backend
+│   │
+│   ├── /controllers #Gère les requêtes HTTP et les actions de l'application.
+│   │   ├── authController.go  #Gestion de l'authentification (inscription, connexion, déconnexion).
+│   │   ├── postController.go  #Gestion des posts (création, récupération).
+│   │   ├── commentController.go #Gestion des commentaires sur les posts.
+│   │   ├── messageController.go #Gestion des messages privés.
+│   │   └── websocketController.go #Gestion des connexions WebSocket.
+│   │
+│   ├── /models
+│   │   ├── middleware.go
+│   │   └── model.go
+│   │
+│   ├── /utils
+│   │   ├── user.go #Modèle de données pour les users.
+│   │   ├── post.go #Modèle de données pour les posts.
+│   │   ├── comment.go #Modèle de données pour les commentaires.
+│   │   └── message.go # Modèle de données pour les messages privés.
+│   │
+│   ├── /repositories #Gère les interactions avec la base de données.
+│   │   ├── userRepository.go #données users
+│   │   ├── postRepository.go #données post
+│   │   ├── commentRepository.go #données comment
+│   │   └── messageRepository.go #données msg
+│   │
+│   ├── /services #logique de l'application.
+│   │   ├── authService.go
+│   │   ├── postService.go
+│   │   ├── commentService.go
+│   │   ├── messageService.go
+│   │   └── websocketService.go
+│   │
+│   ├── routes.go #Définit les routes de l'application.
+│   └── database.go #Configuration de la base de données SQLite.
+│
+├── /frontend
+│   │
+│   ├── /static
+│   │   ├── css
+│   │   ├── icons
+│   │   └── assets
+│   │
+│   ├── /js
+│   │   ├── app.js
+│   │   ├── auth.js
+│   │   ├── posts.js
+│   │   ├── comments.js
+│   │   ├── messages.js
+│   │   ├── websocket.js
+│   │   ├── templates.js
+│   │   └── utils.js #Utilitaires généraux.
+│   │
+│   └── /view
+|         └── index.html
+│
+├── /data
+│   └── forum.db
+│
+├──/scripts
+|   └── #all bash
+├──main.go #Point d'entrée
+├── go.mod
+└── go.sum
+

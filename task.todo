@@ -1,0 +1,62 @@
+// telecharger l'extenions todo+  
+☐ : real time forum @started(24-05-27 10:16)
+REAL-TIME-FORUM:
+    Connexion: @ousamsene
+        Register:
+            Form:
+                ✔ : form ('Nickname, Age, Gender, FstName, LstName, Email, Passwrd') @done(24-06-13 12:03)
+                ✔ : check if the email or nickname is not in the db @done(24-06-13 12:03)
+                ✔ : redirect to the forum @done(24-06-27 13:47)
+        logIn-logOut:
+            ✔ : connect using either the nickname or the e-mail @done(24-06-13 12:02)
+            ✔ : The user must be able to log out from any page on the forum. @done(24-06-13 12:02)
+    Post-Comment: @babacandiaye
+        Post:
+            ✔ : create post (title, content, category) @started(24-05-30 19:06) @done(24-06-13 12:02) @lasted(1w6d16h56m6s)
+            ✔ : category post @started(24-06-07 10:45) @done(24-06-13 12:02) @lasted(6d1h17m19s)
+            ✘ : image upload @started(24-06-07 10:45) @cancelled(24-06-13 00:51) @wasted(5d14h6m29s)
+            ✔ : display post @started(24-06-07 10:45) @done(24-06-13 12:02) @lasted(6d1h17m33s)
+            ✔ : like or dislike (pas obligatoire) @done(24-06-27 13:45)
+            ✔ : nbr de like or dislike or comment (obligatoire pour like dislike) @done(24-06-27 13:47)
+        Comment:
+            ✔ : create comment @done(24-06-15 00:27)
+            ✔ : see comment @done(24-06-15 00:28)
+    Private-Message: @emalo
+        Online/Offline-Section:
+            ✔ : show who is online/offline @done(24-06-27 13:45)
+        Message-send-receive:
+            ✔ : send a message. @done(24-06-27 13:45)
+            ✔ : receive message @done(24-06-27 13:45)
+            ✔ : receive a notification (message receiver) @done(24-06-27 13:45)
+            - if the user is new and has no messages :
+                ✔ : organise the list of users alphabetically @done(24-06-27 13:48)
+            - else :
+                ✔ : organised by the last message sent @done(24-06-27 13:48)
+            - when it has clicked on the user you wish to send:
+                ✔ : You should be able to see any previous messages you have had with the user @done(24-06-27 13:46)
+                ✔ : Reload the last 10 messages and when you scroll to see more messages, you have to provide the user with 10 more, without spamming the scroll event @done(24-06-27 13:46)
+        formate-message:
+            ✔ : date @done(24-06-27 13:46)
+            ✔ : username @done(24-06-27 13:46)
+    Bonus:
+        ✔ : profile user @done(24-06-27 13:46)
+        ✘ : send images via private messages? @cancelled(24-06-27 13:46)
+    Typing-Optionnal:
+        ✔ : animation that confirms that typing is working @done(24-06-27 13:46)
+        ✔ : animation run with no interruption to movement @done(24-06-27 13:46)
+        ✔ : the current keystroke has the name of the user who is typing @done(24-06-27 13:46)
+        ✔ : confirm that the current typing engine has stopped when the user stops typing @done(24-06-27 13:46)
+        ✔ : everyone can see when the other is typing @done(24-06-27 13:46)
+-------------------------------------------------------------------------------------------
+
+//command
+☐ : ctrl + Enter (add task)
+☐ @started(24-05-23 13:55) ctrl + Enter /  alt + S (when starting a task)
+✔ @done(24-05-23 13:53) alt+D (after finishing a task)
+✘ @cancelled(24-05-23 13:53) alt+C (when there's a big bug)
+☐ : create post @babacandiaye (when choosing a task)
+//ordre de priorité
+@critical : when this task is used in another part
+@high : urgent task but can wait
+@low :  not urgent
+@today : optionnal
