@@ -1,0 +1,158 @@
+.profileprofile {
+  position: relative;
+  background-color: #fff;
+  width: 18vw;
+  height: 14vw;
+  border-radius: 40px;
+  background-image: url("../assets/profil.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  padding: 2%;
+  margin: 2%;
+  opacity: 0; 
+  animation: fadeIn 2s forwards; 
+}
+
+.profilecontent {
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.profilecontent div {
+  z-index: 2;
+  color: rgb(0, 0, 0);
+}
+
+.profileusertag {
+  float: right;
+  margin: 2vh 2vw 0% 0%;
+}
+
+.profileusertag div {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.profileposts {
+  width: max-content;
+  height: max-content;
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  bottom: 0;
+  margin: 0% 0% 9% 13%;
+}
+
+.profileposts div {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.profileLikes {
+  background-color: #116eff;
+  border-radius: 30px;
+  height: 9vh;
+  width: 6vw;
+  color: white;
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: end;
+  position: absolute;
+  right: 1vw;
+}
+
+.profileid {
+  background-color: #116eff;
+  width: 10px;
+  height: 10px;
+  border-radius: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 1rem;
+  padding: 8%;
+}
+/* laptop */
+@media (max-width: 1600px){
+  .profileprofile{
+    background-size: 90%;
+    width: 17vw;
+  }
+  .profileLikes{
+    bottom: 3vh;
+  }
+  .profileid{
+    left:1vw;
+    top:2vh;
+  }
+  .profileusertag{
+    margin: 4vh 3vw 0% 0%;
+  }
+  .profileposts{
+    margin: 0% 0% 15% 14%;
+  }
+}
+
+/* Pour les tablettes et petits ordinateurs portables */
+@media (max-width: 1500px) {
+  .profileLikes{
+    width: 6vw;
+    height: 7vh;
+    border-radius: 20px;
+    bottom: 2vh;
+  }
+  .profileusertag{
+    margin: 2vh 2.1vw 0% 0%;
+  }
+  .profileid{
+    left:1vw;
+    top:2vh;
+  }
+  .usersLeft{
+    height: 43vh;
+  }
+}
+
+/* Pour les téléphones en mode paysage */
+@media (max-width: 990px) {
+
+}
+
+/* Pour les téléphones en mode portrait */
+@media (max-width: 768px) {
+  .profileAndOnline{
+    display: none;
+  }
+  .posts{
+    width: 50vw;
+  }
+  .postContainer{
+    width: 100%;
+  }
+  .addPost p{
+    display: none;
+  }
+}

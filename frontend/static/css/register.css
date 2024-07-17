@@ -1,0 +1,161 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ------------------css pour les images de bentos ---------------------------*/
+.bento1 {
+  width: 43.984375vw;
+  height: 43.18936877076412vh;
+}
+
+.bento1img,
+.bento3img,
+.bento2img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+.bento2 {
+  height: 43.1vh;
+  width: 15.4vw;
+}
+
+.bento3 {
+  width: 25.9375vw;
+  height: 43.18936877076412vh;
+}
+
+.imgField {
+  display: flex;
+  align-items: center;
+  gap: 2.5vw;
+}
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Allimage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5vw;
+  width: 50%;
+}
+.inputField {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+}
+/* pour login */
+/* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 60vh;
+    align-items: center; */
+
+/* ------------------css pour les images de bentos ---------------------------*/
+.inputForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+.inputForm > input {
+  width: 23.203125vw;
+  height: 5.537098560354374vh;
+  border-radius: 50px;
+  color: #666464;
+  border: 1px solid #d9d9d9;
+  font-size: large;
+  font-weight: 10px;
+  padding-left: 20px;
+}
+
+.inputForm > input::placeholder {
+  color: #999898;
+  /* color: rgb(70, 68, 68); */
+  font-size: 1.5vw;
+  padding-left: 1vw;
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.submit {
+  width: 23.203125vw;
+  height: 5.537098560354374vh;
+  border-radius: 50px;
+  background-color: #116eff;
+  color: #ffffff;
+  font-size: 1.5vw;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 60%;
+  justify-content: space-between;
+}
+.logo {
+  height: 15.797342vh;
+  width: 9.84140625vw;
+}
+
+.acount {
+  margin: 2%;
+  color: #d9d9d9;
+  font-size: 1.5vw;
+  font-family: "Poppins", sans-serif;
+
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.singin,
+.singup {
+  color: #116eff;
+  font-size: 1.5vw;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+.show {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  box-shadow: 0px 0px 10px 0px #116eff;
+  background-color: #ffffff;
+  color: #116eff;
+  border-radius: 10px;
+  padding: 1vw;
+  margin: 1vw;
+}

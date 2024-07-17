@@ -1,0 +1,205 @@
+.usersLeft {
+  height: 43vh;
+  width: 18vw;
+  position: relative;
+  background-image: url("../assets/onlineuser.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  background-size: contain;
+  border-radius: 40px;
+  padding: 2vh 0vw;
+  margin: 6% 0;
+  opacity: 0; 
+  animation: fadeIn 2s forwards;
+}
+
+.usertitleLeft {
+  position: absolute;
+  z-index: 1;
+  right: 1vw;
+  margin: 1vh 2vw 0 0;
+  color: #116eff;
+  font-size: 1rem;
+}
+
+.oneusersLeft {
+  display: flex;
+  width: 13vw;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 4% 0;
+}
+
+.usersbackgroundLeft {
+  position: absolute;
+}
+
+.userLeft {
+  margin: 7vh 0 0 2vw;
+  overflow: scroll;
+  height: 35vh;
+}
+
+.userLeft::-webkit-scrollbar {
+  display: none;
+}
+
+.userbadgesLeft {
+  background-color: white;
+  color: #116eff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onlineLeft {
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: #116eff 1px solid;
+  top: 0;
+  margin: 0% 0% 0% 12%;
+}
+
+.userfisrtandlastnameLeft {
+  cursor: pointer;
+}
+
+.notificationLeft {
+  color: #ffffff;
+  width: 2vw;
+}
+
+.notifs {
+  z-index: 1000;
+  background-color: whitesmoke;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+}
+
+.notif-container {
+}
+
+.notif-message .notif-sender {
+  font-weight: bold;
+  font-family: Arial, Helvetica;
+}
+
+.notif-message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Arial, Helvetica;
+}
+
+.notifContainContainer {
+  position: absolute;
+  background-color: #116eff;
+  height: max-content;
+  padding: 10px;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.typing-bubble {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  animation: wave 1.5s infinite ease-in-out;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.15s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0s;
+}
+
+@keyframes wave {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+}
+
+/* laptop */
+@media (max-width: 1600px) {
+  .usersLeft {
+    height: 46vh;
+    background-size: 83%;
+  }
+  .usertitleLeft{
+    margin: 0.5vh 4vw 0 0;
+  }
+}
+
+/* Pour les tablettes et petits ordinateurs portables */
+@media (max-width: 1500px) {
+  .usersLeft {
+    height: 35vh;
+    background-size: 90%;
+  }
+  .usertitleLeft {
+    margin: 1vh 3vw 0 0;
+  }
+}
+
+/* Pour les téléphones en mode paysage */
+@media (max-width: 990px) {
+}
+
+/* Pour les téléphones en mode portrait */
+@media (max-width: 768px) {
+}
